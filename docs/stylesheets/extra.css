@@ -1,0 +1,26 @@
+/* 首页标题动画 */
+.md-typeset h1 {
+  color: var(--md-primary-fg-color);
+  animation: fadeIn 1s ease-in;
+}
+
+/* 卡片式导航 */
+.grid.cards {
+  gap: 1rem;
+}
+.grid.cards > :is(.card) {
+  background: var(--md-default-bg-color--light);
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+.grid.cards > :is(.card):hover {
+  transform: translateY(-5px);
+}
+
+/* 代码块增强 */
+pre > code {
+  border-radius: 8px;
+  padding: 1.5em !important;
+}
